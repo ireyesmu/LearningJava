@@ -1,5 +1,5 @@
 public abstract class BusinessEmployee extends Employee {
-    private static double businessSalary = 50000;
+    private static final double BUSINESSSALARY = 50000;
     private double bonusBudget;
 
     public BusinessEmployee(String name, double salary) {
@@ -7,7 +7,7 @@ public abstract class BusinessEmployee extends Employee {
     }
 
     public BusinessEmployee(String name) {
-        this(name, businessSalary);
+        this(name, BUSINESSSALARY);
     }
 
     public double getBonusBudget(){
@@ -24,6 +24,6 @@ public abstract class BusinessEmployee extends Employee {
     }
 
     public static double getBusinessSalary() {
-        return businessSalary;
+        return BUSINESSSALARY;
     }
 }

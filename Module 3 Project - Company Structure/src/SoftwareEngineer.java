@@ -15,9 +15,9 @@ public class SoftwareEngineer extends TechnicalEmployee {
         this.codeAccess = access;
     }
 
-    public boolean checkInCode() {
+    /*public boolean checkInCode() {
         if (this.getManager() instanceof TechnicalLead) {
             return  ((TechnicalLead) this.getManager()).approveCheckIn(this);
         } else return false;
-    }
+    }*/
 }

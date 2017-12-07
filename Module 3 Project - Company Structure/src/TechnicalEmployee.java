@@ -1,5 +1,5 @@
 public abstract class TechnicalEmployee extends Employee {
-    private static double technicalSalary = 75000;
+    private static final double TECHNICALSALARY = 75000;
     private int successfulCheckIns;
 
 
@@ -8,7 +8,7 @@ public abstract class TechnicalEmployee extends Employee {
     }
 
     public TechnicalEmployee(String name) {
-        this(name, technicalSalary);
+        this(name, TECHNICALSALARY);
     }
 
     public int getSuccessfulCheckIns() {
@@ -25,6 +25,6 @@ public abstract class TechnicalEmployee extends Employee {
     }
 
     public static double getTechnicalSalary() {
-        return technicalSalary;
+        return TECHNICALSALARY;
     }
 }

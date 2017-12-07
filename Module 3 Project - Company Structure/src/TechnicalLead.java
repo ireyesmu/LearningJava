@@ -22,13 +22,11 @@ public class TechnicalLead extends TechnicalEmployee implements Manager {
         } else return false;
     }
 
-    public boolean approveCheckIn(SoftwareEngineer e) {
-        return false; //prueba
-    }
+    /*public boolean approveCheckIn(SoftwareEngineer e) {
+        return false;
 
     public boolean requestBonus(Employee e, double bonus) {
-        return false; //prueba
-    }
+        return false;*/
 
     public String getTeamStatus() {
         if (directReports.size() > 0 ) {
@@ -44,14 +42,4 @@ public class TechnicalLead extends TechnicalEmployee implements Manager {
         return directReports;
     }
 
- /*   @Override
-    public String employeeStatus() {
-        if (directReports.size() > 0 ) {
-            String result = super.employeeStatus() + " and is managing:\\n";
-            for (SoftwareEngineer e : directReports) {
-                result += e.employeeStatus() + "\\n";
-            }
-            return result;
-        } else return super.employeeStatus() + " and no direct reports yet.";
-    }*/
 }
